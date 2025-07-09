@@ -1,0 +1,21 @@
+programa
+{
+	
+	funcao inicio()
+	{
+
+		inteiro km_hora, multa
+		
+		escreva("qual era a sua velocidade?(Km/h) ")
+		leia(km_hora)
+
+		se(km_hora > 80){
+		
+		multa = (km_hora - 80) * 7
+
+		escreva("você foi multado em R$", multa, ".00")
+		}senao{
+			escreva("está tudo nos conformes, você está livre!")
+		}
+	}
+}
