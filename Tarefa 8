@@ -1,0 +1,34 @@
+programa
+{
+	
+	funcao inicio()
+	{
+
+		real l1, l2, l3
+
+		escreva("Diga um lado de um triângulo: ")
+		leia(l1)
+		escreva("Diga mais um lado de um triângulo: ")
+		leia(l2)
+		escreva("Diga mais um último lado de um triângulo: ")
+		leia(l3)
+		
+		se(l1 + l2 < l3 ou l2 + l3 < l1 ou l1 + l3 < l2){
+			
+			escreva("Isto não pode ser um triângulo")
+			
+		}senao se(l1 == l2 e l1 == l3){
+			
+			escreva("Isto pode ser um triângulo equilátero")
+			
+		}senao se(l1 == l2 ou l2 == l3 ou l1 == l3){
+			
+			escreva("Isto pode ser um triângulo isósceles")
+			
+		}senao se(l1 + l2 > l3 ou l2 + l3 > l1 ou l1 + l3 > l2){
+			
+			escreva("Isto pode ser um triângulo escaleno")
+			
+		}
+	}
+}
