@@ -1,0 +1,42 @@
+programa
+{
+	
+	funcao inicio()
+	{
+
+		real n1, n2, n3, n4
+
+		escreva("Diga um número: ")
+		leia(n1)
+		escreva("Diga mais um número: ")
+		leia(n2)
+		escreva("Diga mais um terceiro número: ")
+		leia(n3)
+		escreva("Diga mais um último número: ")
+		leia(n4)
+		
+		se(n1 > n2 e n1 > n3 e n1 > n4){
+			
+			escreva("O maior número é o primeiro, ", n1)
+			
+		}senao se(n2 > n1 e n2 > n3 e n2 > n4){
+			
+			escreva("O maior número é o segundo, ", n2)
+			
+		}senao se(n3 > n1 e n3 > n2 e n3 > n4){
+			
+			escreva("O maior número é o terceiro, ", n3)
+			
+		}senao se(n4 > n1 e n4 > n2 e n4 > n2){
+			
+			escreva("O maior número é o segundo, ", n4)
+			
+		}senao se(n1 == n2 e n1 == n3 e n1 == n4){
+			
+			escreva("Não há um maior número")
+			
+		}
+		
+		
+	}
+}
