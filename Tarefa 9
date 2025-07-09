@@ -1,0 +1,41 @@
+programa
+{
+	
+	funcao inicio()
+	{
+
+		cadeia letra
+		inteiro ano
+	
+		escreva("digite uma letra: ")
+		leia(letra)
+
+		se(letra == "a" ou letra == "e" ou letra == "i" ou letra == "o" ou letra == "u"){
+			escreva("esta letra é uma vogal! \n")
+		}senao{
+			escreva("esta letra é uma consoante! \n")
+		}
+
+		escreva("diga um ano: ")
+		leia(ano)
+
+		se(ano <= 0){
+		
+			se((ano % 4) == 0){
+
+			
+				se((ano % 400) == 0 ){
+					escreva("o ano é bissexto!")
+				
+				}senao{
+					escreva("o ano não é bissexto!")
+				
+				}
+			
+			}senao{
+				escreva("o ano não é bissexto!")
+			}
+
+		}
+	}
+}
