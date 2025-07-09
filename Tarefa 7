@@ -13,31 +13,31 @@ programa
 		escreva("Diga mais um último número: ")
 		leia(n3)
 		
-		se(n1 > n2 e n1 > n3 e n2 > n3){
+		se(n1 >= n2 e n1 >= n3 e n2 >= n3){
 			
-			escreva("A ordem decrescente destes números é: ", n1, "\n", n2, "\n", n3, "\n")
+			escreva("A ordem decrescente destes números é:\n", n1, "\n", n2, "\n", n3, "\n")
 			
-		}senao se(n1 > n2 e n1 > n3 e n3 > n2){
+		}senao se(n1 >= n2 e n1 >= n3 e n3 >= n2){
 			
-			escreva("A ordem decrescente destes números é: ", n1, "\n", n3, "\n", n2, "\n")
+			escreva("A ordem decrescente destes números é:\n", n1, "\n", n3, "\n", n2, "\n")
 			
-		}senao se(n2 > n1 e n2 > n3 e n1 > n3){
+		}senao se(n2 >= n1 e n2 >= n3 e n1 >= n3){
 			
-			escreva("A ordem decrescente destes números é: ", n2, "\n", n1, "\n", n3, "\n")
+			escreva("A ordem decrescente destes números é:\n", n2, "\n", n1, "\n", n3, "\n")
 			
-		}senao se(n2 > n1 e n2 > n3 e n3 > n1){
+		}senao se(n2 >= n1 e n2 >= n3 e n3 >= n1){
 			
-			escreva("A ordem decrescente destes números é: ", n2, "\n", n3, "\n", n1, "\n")
+			escreva("A ordem decrescente destes números é:\n", n2, "\n", n3, "\n", n1, "\n")
 			
-		}senao se(n3 > n1 e n3 > n2 e n2 > n1){
+		}senao se(n3 >= n1 e n3 >= n2 e n2 >= n1){
 			
-			escreva("A ordem decrescente destes números é: ", n3, "\n", n2, "\n", n1, "\n")
+			escreva("A ordem decrescente destes números é:\n", n3, "\n", n2, "\n", n1, "\n")
 			
-		}senao se(n3 > n1 e n3 > n3 e n1 > n2){
+		}senao se(n3 >= n1 e n3 >= n3 e n1 >= n2){
 			
-			escreva("A ordem decrescente destes números é: ", n3, "\n", n1, "\n", n2, "\n")
+			escreva("A ordem decrescente destes números é:\n", n3, "\n", n1, "\n", n2, "\n")
 			
-		}senao se(n1 == n2 e n1 == n3){
+		}senao se(n1 == n2 e n1 == n3 e n2 == n3){
 			
 			escreva("Não há um maior número para fazer uma tabela decrescente")
 			
