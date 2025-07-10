@@ -90,6 +90,11 @@ programa
 				escreva("Calculando valor total...\n")
 
 				pare
+
+			caso contrario:
+				escreva("Não é um código válido... Tente de novo!\n")
+
+				pare
 				
 		}
 		}
