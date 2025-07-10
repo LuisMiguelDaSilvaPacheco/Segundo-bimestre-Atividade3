@@ -1,0 +1,100 @@
+programa
+{
+	
+	funcao inicio()
+	{
+
+		logico continuar = verdadeiro
+		inteiro codigo, quantidade
+		real valor_total = 0
+	
+		escreva("*************************************************************** \n")
+		escreva("**  Código  **          Produto         **   Preço unitário  ** \n")
+		escreva("*************************************************************** \n")
+		escreva("**   100    **      Cachorro quente     **       R$5.00      ** \n")
+		escreva("**   101    **           Bauru          **       R$2.60      ** \n")
+		escreva("**   102    **        Bauru c/ovo       **       R$3.80      ** \n")
+		escreva("**   103    **        Hamburguer        **       R$9.00      ** \n")
+		escreva("**   104    **      Cheeseburguer       **       R$11.00     ** \n")
+		escreva("**   105    **        Refrigerante      **       R$3.00      ** \n")
+		escreva("**   106    **    Semente dos deuses    **       R$1000.00   ** \n")
+		escreva("*************************************************************** \n")
+		escreva("**    0     **           Sair           **                   ** \n")
+		escreva("*************************************************************** \n")
+
+		enquanto(continuar){
+			escreva("Informe um codigo:\n")
+			leia(codigo)
+			
+			escolha(codigo){
+				
+			caso 100:
+				escreva("Quantas unidades?\n")
+				leia(quantidade)
+
+				valor_total+= quantidade * 5.00
+
+				pare
+
+			caso 101:
+				escreva("Quantas unidades?\n")
+				leia(quantidade)
+
+				valor_total+= quantidade * 2.60
+
+				pare
+
+			caso 102:
+				escreva("Quantas unidades?\n")
+				leia(quantidade)
+
+				valor_total+= quantidade * 3.80
+
+				pare
+
+			caso 103:
+				escreva("Quantas unidades?\n")
+				leia(quantidade)
+
+				valor_total+= quantidade * 9.00
+
+				pare
+
+			caso 104:
+				escreva("Quantas unidades?\n")
+				leia(quantidade)
+
+				valor_total+= quantidade * 11.00
+
+				pare
+
+			caso 105:
+				escreva("Quantas unidades?\n")
+				leia(quantidade)
+
+				valor_total+= quantidade * 3.00
+
+				pare
+
+			caso 106:
+				escreva("Quantas unidades?\n")
+				leia(quantidade)
+
+				valor_total+= quantidade * 1000.00
+
+				pare
+
+			caso 0:
+				continuar = falso
+
+				escreva("Calculando valor total...\n")
+
+				pare
+				
+		}
+		}
+
+		escreva("O valor total foi: R$", valor_total)
+
+	}
+}
